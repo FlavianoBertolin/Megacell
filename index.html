@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Mega Cell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="interface">
+                <img id="logo" src="/images/cartão megacell_novo cel_pages-to-jpg-d.jpg" alt="Logo">
+            <nav class="menu">
+                <ul>
+                    <li> <a href="#">Início</a></li>
+                    <li><a href="#">Orçamento</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="introducao">
+        <h1>Pioneira nos mais diversos serviços de manutenção em celulares!</h1>    
+        </div>
+        <form method="post" action="orçamento.php">
+            <p><label for="inome">Nome:</label> 
+                <input type="text" name="nome" id="inome" required minlength="5" placeholder="Fabricio">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone/Whatsapp</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required>
+            </p>
+            <p><label for="imodelo">Modelo do celular </label>
+                <input type="text" name="Modelo" id="imodelo" required maxlength="20">
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </main>
+    <aside></aside>
+    <footer></footer>
+</body>
+</html>
